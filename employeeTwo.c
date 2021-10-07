@@ -44,10 +44,10 @@ PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int size, char* name)
 
 PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int size, double salary)
 {
-    return searchEmployeeTable(ptr, size, &salary, compareEmployeeNumber);
+    return searchEmployeeTable(ptr, size, &salary, compareEmployeeSalary);
 }
 
 PtrToEmployee searchEmployeeByPhoneNumber(PtrToConstEmployee ptr, int size, char* phoneNumber)
 {
-    return searchEmployeeTable(ptr, size, phoneNumber, compareEmployeeName);
+    return searchEmployeeTable(ptr, size, phoneNumber, compareEmployeePhoneNumber);
 }
